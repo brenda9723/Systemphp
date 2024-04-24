@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+:root{
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #29fd53;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2b2b; 
+    padding: 0.5em 1em;
+   
+  }
+
+    /* Estilos para el logotipo */
+    #logo img {
+        height: 40px; 
+        border-radius: 100px;
+    }
+    
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+  }
+  
+  .busqueda{
+    display: flex;
+    /* para que la barra de navegacion ocupe mas espacion que los demas elementos */
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+  }
+  
+  .busqueda input {
+    padding: 0.5em;
+    width: 60%;
+    margin-right: 0.5em;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(221, 179, 125);
+    
+  }
+  .iconobusqueda input{
+    position: absolute; 
+    left: 8px; 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .busqueda button {
+    padding: 0.5em;
+    border-radius: 25px;
+    background-color: rgb(250, 113, 15);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .busqueda button:hover {
+    background-color: #71e968; /* Cambia el color de fondo al pasar el cursor por encima */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño para dar una sensación de "pulsación" */
+  }
+  
+  /* Estilos para el botón de búsqueda al hacer clic */
+  .busqueda button:active {
+    transform: scale(0.95); /* Reduce ligeramente el tamaño como si se estuviera presionando */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+    
+    .busqueda {
+      width: 100%;
+      margin-top: 0.5em;
+    }
+    }
+
+  .texto {
+    align-items: center;
+  }

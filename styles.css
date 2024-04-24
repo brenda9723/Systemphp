@@ -1,0 +1,69 @@
+body{
+    background-color: blueviolet;
+}
+
+.formulario{
+    background-color: beige;
+    width: 25%;
+    margin: 120px auto;
+    padding: 50px;
+    box-shadow: 10px 10px 10px rgb(173, 133, 143);
+    border-radius: 20px;
+
+    
+}
+
+.encabezado{
+    margin-left: 120px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:larger
+}
+
+.username label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+    font-style: oblique;
+    padding: 10px;
+}
+
+.username input[type="text"]{
+    border-radius: 25px;
+    border-color: #88aaff;
+    background-color: rgba(136, 170, 255, 0.2);
+
+}
+
+.password label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+    font-style: oblique;
+    padding: 10px;
+}
+
+.password input[type="password"]{
+    border-radius: 25px;
+    border-color: #88aaff;
+    background-color: rgba(136, 170, 255, 0.2);
+
+}
+
+.boton{
+    padding: 10px 20px;
+    font-size: 16px;
+    
+
+}
+
+
+/* para que se adapte a diferentes pantallas */
+@media screen and (max-width:700px){
+    .formulario{
+        width: 65%;
+        padding: 40px;
+
+    }
+}
